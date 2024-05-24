@@ -1,0 +1,24 @@
+pipeline {
+
+agent any
+
+stages {
+    stage ('code-checkout'){
+        steps{
+            echo 'hello world'
+        }
+
+    }
+    stage ('build stage'){
+        steps{
+            echo 'build success'
+        }
+    }
+    stage ('test stage'){
+        steps{
+            echo 'deploy success'
+        }
+    }
+    }
+}
+

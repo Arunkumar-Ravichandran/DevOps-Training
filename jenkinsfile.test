@@ -1,7 +1,7 @@
 pipeline {
     agent {
       node {    
-      label 'awswk13-slave' 
+      label 'slave-1' 
      }
     }
     stages{

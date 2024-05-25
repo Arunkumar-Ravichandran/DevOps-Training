@@ -7,7 +7,7 @@ pipeline {
     stages{
         stage('stage1') {
             input {
-                messsage "can we processed"
+                message "can we processed"
                 ok "yes"
                 submitter "Digital vars"
                 parameters {

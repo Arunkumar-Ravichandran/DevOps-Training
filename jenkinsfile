@@ -14,16 +14,12 @@ stages {
             echo 'build success'
         }
     }
-    stage ('test stage'){
+    stage ('QA stage'){
         steps{
-            echo 'test success'
+            echo 'QA success'
         }
     }
-    stage ('Deployment stage'){
-        steps{
-            echo 'deployment success'
-        }
-    }
+   
 }
 }
 

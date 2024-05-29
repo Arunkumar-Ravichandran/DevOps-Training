@@ -1,0 +1,23 @@
+pipeline {
+    agent {
+      node {    
+      label 'slave-1' 
+     }
+    }
+    stages{
+        stage('stage1') {
+            input {
+                message "can we processed"
+                ok "yes"
+                submitter "Digital vars"
+                parameters {
+                    string(name: 'PERSON', defaultValue: 'Digitalvars', description: 'Member')
+                }
+            }
+            steps {
+                echo "${PERSON}, is procedding"
+            }
+        }
+    } 
+
+}
